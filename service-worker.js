@@ -1,5 +1,5 @@
-const CACHE_NAME = 'pokedex-static-v5';
-const RUNTIME_CACHE_NAME = 'pokedex-runtime-v5';
+const CACHE_NAME = 'pokedex-static-v6';
+const RUNTIME_CACHE_NAME = 'pokedex-runtime-v6';
 
 const KANTO_SPRITE_ASSETS = Array.from({ length: 151 }, (_, index) => {
   const id = String(index + 1).padStart(3, '0');
