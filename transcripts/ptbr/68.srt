@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,620
+Mashamp é um Pokémon do tipo lutador com quatro braços poderosos.
+
+2
+00:00:05,620 --> 00:00:08,020
+Evolui de Machoke.
+
+3
+00:00:08,020 --> 00:00:12,300
+Golpe cruzado e soco dinâmico são devastadores.
+

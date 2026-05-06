@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,660
+Seal é um Pokémon do tipo água que adora ambientes frios.
+
+2
+00:00:04,660 --> 00:00:06,620
+Evolui para Deugong.
+
+3
+00:00:06,620 --> 00:00:09,880
+Cabeçada e raio de gelo são usados com frequência.
+

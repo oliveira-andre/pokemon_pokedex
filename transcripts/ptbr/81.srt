@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:07,600
+Magnemite é um Pokémon dos tipos elétrico e aço que flutua usando força magnética.
+
+2
+00:00:07,600 --> 00:00:10,320
+Evolui para Magneton!
+
+3
+00:00:10,320 --> 00:00:14,520
+Choque do Trovão e Sonic Boom são ataques comuns.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:06,200
+Ivysaur is a stronger, grass and poison type Pokémon as its bulb begins to bloom.
+
+2
+00:00:06,200 --> 00:00:10,200
+It evolves from Bulbasaur and will later become Venusaur.
+
+3
+00:00:10,200 --> 00:00:13,560
+Razor Leaf and Sleep Powder are common techniques.
+

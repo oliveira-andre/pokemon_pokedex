@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Venonat é um pokémon dos tipos inseto e veneno com olhos grandes e compostos.
+
+2
+00:00:05,000 --> 00:00:07,000
+Evolui para Venomoth.
+
+3
+00:00:07,000 --> 00:00:10,000
+Confusão e pó venenoso são frequentes.
+

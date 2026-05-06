@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,700
+Arcanine is a legendary fire-type Pokémon known for its incredible speed.
+
+2
+00:00:05,120 --> 00:00:07,120
+It evolves from Growlithe.
+
+3
+00:00:07,760 --> 00:00:10,760
+Flamethrower and Extreme Speed define it.
+

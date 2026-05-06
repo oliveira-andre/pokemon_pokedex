@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:05,000
+Poliwrath é um pokémon dos tipos água e lutador com força imensa.
+
+2
+00:00:05,000 --> 00:00:11,000
+Evolui de Poliwhirl. Submissão e hidrobombas são golpes poderosos.
+

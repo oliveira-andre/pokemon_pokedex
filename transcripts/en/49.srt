@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Venomoth is a bug- and poison-type Pokémon that scatters toxic scales.
+
+2
+00:00:05,000 --> 00:00:07,500
+It evolves from Venonat.
+
+3
+00:00:07,500 --> 00:00:10,500
+Psychic and Sleep Powder are signature moves.
+

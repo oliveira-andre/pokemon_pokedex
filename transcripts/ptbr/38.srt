@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,340
+Ninetales é um Pokémon místico do tipo fogo, conhecido por sua grande sabedoria.
+
+2
+00:00:05,340 --> 00:00:06,980
+Evolui de Vulpix.
+
+3
+00:00:06,980 --> 00:00:09,780
+Lança-chama-se e Redemoinho de fogo são icônicos.
+

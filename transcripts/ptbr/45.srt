@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:04,760
+Vileplume é um Pokémon dos tipos grama e veneno com pétalas enormes.
+
+2
+00:00:04,760 --> 00:00:09,680
+Evolui de Gloom, dança das pétalas e raio solar mostram seu poder.
+

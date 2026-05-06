@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,500
+Percian é um Pokémon elegante do tipo normal, que se move em silêncio e com velocidade.
+
+2
+00:00:05,500 --> 00:00:07,020
+Evolui de Meowth.
+
+3
+00:00:07,020 --> 00:00:09,300
+Corte e mordida são ataques letais.
+

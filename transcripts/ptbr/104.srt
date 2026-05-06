@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,320
+Kubone é um pokémon do tipo terra que usa o crânio da mãe como capacete.
+
+2
+00:00:05,320 --> 00:00:07,880
+Evolui para Marowak.
+
+3
+00:00:07,880 --> 00:00:10,880
+Osso, bastão e cabeçada são comuns.
+

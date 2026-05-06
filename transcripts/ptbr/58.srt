@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,360
+Growlithe é um Pokémon leal do tipo fogo que protege seu treinador sem medo.
+
+2
+00:00:05,360 --> 00:00:07,560
+Evolui para Arcanine.
+
+3
+00:00:07,560 --> 00:00:09,920
+Roda de fogo e mordida são comuns.
+

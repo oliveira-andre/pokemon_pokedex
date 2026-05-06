@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:04,800
+Tentacruel is a water and poison type Pokémon with massive tentacles.
+
+2
+00:00:04,800 --> 00:00:10,320
+It evolves from Tentacool. Hydro Pump and Rap Crush enemies.
+

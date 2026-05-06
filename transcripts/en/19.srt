@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:06,960
+Rattata is a quick and alert normal-type Pokémon that survives anywhere, it evolves into Raticate.
+
+2
+00:00:06,960 --> 00:00:09,760
+Tackle and Hyper Fang are its main attacks.
+

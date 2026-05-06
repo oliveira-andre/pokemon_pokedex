@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Bedrill é um Pokémon rápido, dos tipos inseto e veneno que ataca sem dar trégua.
+
+2
+00:00:05,000 --> 00:00:06,680
+Evolui de Kakuna.
+
+3
+00:00:06,680 --> 00:00:09,920
+Duas agulhas e míssil de espinhos atingem em sequência.
+

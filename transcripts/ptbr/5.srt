@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,280
+Charmeleon é um Pokémon do tipo fogo de temperamento explosivo que adora batalhar.
+
+2
+00:00:05,280 --> 00:00:08,940
+Evolui de Charmander e se torna Charizard.
+
+3
+00:00:08,940 --> 00:00:11,900
+Presa de fogo e lança chamas são ataques frequentes.
+

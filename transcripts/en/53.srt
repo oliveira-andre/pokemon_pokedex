@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:05,280
+Persian is a sleek, normal-type Pokémon that moves silently and swiftly.
+
+2
+00:00:05,280 --> 00:00:10,720
+It evolves from Meowth. Slash and Bite are elegant, but dangerous.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,400
+Poliwhirl é um pokémon do tipo água com músculos bem desenvolvidos.
+
+2
+00:00:05,800 --> 00:00:07,600
+Evolui de Poliwag.
+
+3
+00:00:08,000 --> 00:00:11,800
+Raios de bolhas e hipnose são frequentes.
+

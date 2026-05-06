@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,000
+Prime Appé é um pokémon do tipo lutador movido por pura fúria.
+
+2
+00:00:04,000 --> 00:00:05,300
+Evolui de Monkey.
+
+3
+00:00:05,300 --> 00:00:08,300
+Golpe, cruzado e fúria causam danos brutais.
+

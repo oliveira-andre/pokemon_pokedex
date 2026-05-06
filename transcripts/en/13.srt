@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,800
+Weedle is a Buck and Poison-type Pokémon with a sharp poisonous stinger.
+
+2
+00:00:04,800 --> 00:00:08,800
+It evolves into Kakuna, and later, Beedrill.
+
+3
+00:00:08,800 --> 00:00:12,200
+Poison Sting and String Shot are commonly used.
+

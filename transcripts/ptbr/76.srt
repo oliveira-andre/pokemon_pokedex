@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,800
+Golem é um pokémon dos tipos pedra e terra que rola em alta velocidade.
+
+2
+00:00:05,800 --> 00:00:07,540
+Evolui de Graveler.
+
+3
+00:00:07,540 --> 00:00:10,840
+Explosão e terremoto são devastadores.
+

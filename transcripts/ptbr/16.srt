@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Pidgey é um Pokémon dos tipos normal e voador encontrado com frequência em campos abertos.
+
+2
+00:00:05,500 --> 00:00:08,000
+Evolui para Pidgeotto e Pidgeot.
+
+3
+00:00:08,300 --> 00:00:11,000
+Rajada de vento e ataque rápido são típicos.
+

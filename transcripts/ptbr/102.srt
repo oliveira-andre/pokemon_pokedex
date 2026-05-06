@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:07,660
+Exeggcute é um pokémon dos tipos grama e psíquico formado por seis ovos.
+
+2
+00:00:07,660 --> 00:00:10,680
+Evolui para Exeggutor.
+
+3
+00:00:10,680 --> 00:00:13,560
+Barragem e hipnose são comuns.
+

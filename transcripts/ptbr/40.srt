@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,600
+Wigglytuff é um Pokémon do tipo normal brincalhão com corpo flexível.
+
+2
+00:00:04,600 --> 00:00:06,520
+Evolui de Jigglypuff.
+
+3
+00:00:06,520 --> 00:00:09,680
+Duplo tapa e vozes trondosas são poderosos.
+

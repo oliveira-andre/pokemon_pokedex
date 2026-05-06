@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Jigglypuff is a normal type Pokemon that puts others to sleep with its song.
+
+2
+00:00:05,000 --> 00:00:08,000
+It evolves into a Wigglytuff.
+
+3
+00:00:08,000 --> 00:00:10,000
+Sing and Pound are common moves.
+

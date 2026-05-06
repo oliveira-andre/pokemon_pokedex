@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:06,000
+Butterfree é um pokémon dos tipos inseto e voador que espalha pós-misteriosos enquanto voa.
+
+2
+00:00:06,000 --> 00:00:11,000
+Evolui de Metapod. Confusão e podo-sono são seus golpes marcantes.
+

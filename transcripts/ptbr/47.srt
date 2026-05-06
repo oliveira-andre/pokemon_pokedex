@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Parasect é um pokémon dos tipos inseto e grama totalmente dominado pelo cogumelo.
+
+2
+00:00:05,500 --> 00:00:06,500
+Evolui de Parás.
+
+3
+00:00:07,000 --> 00:00:09,500
+Esporo e corte são golpes perigosos.
+

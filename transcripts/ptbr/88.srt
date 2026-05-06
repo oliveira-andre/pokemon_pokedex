@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Grimer é um Pokémon do tipo veneno formado por lama tóxica.
+
+2
+00:00:05,000 --> 00:00:07,000
+Evolui para Muk.
+
+3
+00:00:07,000 --> 00:00:10,000
+Lodo e gás venenoso são ataques comuns.
+

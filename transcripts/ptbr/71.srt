@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:07,900
+Vitribel é um pokémon dos tipos grama e veneno que atrai presas com aromas doces.
+
+2
+00:00:07,900 --> 00:00:10,500
+Evoluite de Weeping Bell.
+
+3
+00:00:10,500 --> 00:00:13,780
+Lâmina de folha e ácidos são mortais.
+

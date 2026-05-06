@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:03,680
+Poliwhirl is a water-type Pokémon with well-developed muscles.
+
+2
+00:00:04,320 --> 00:00:09,680
+It evolves from Poliwag. Bubble Beam and Hypnosis are often used.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,120
+Paras is a bug and grass-type Pokémon controlled by mushrooms on its back.
+
+2
+00:00:05,120 --> 00:00:07,720
+It evolves into Parasect.
+
+3
+00:00:07,720 --> 00:00:10,000
+Scratch and Spore are common.
+

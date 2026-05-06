@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,320
+Caterpie é um pequeno pokémon do tipo inseto que cresce rapidamente.
+
+2
+00:00:04,320 --> 00:00:06,920
+Evolui para Metapod e Butterfree.
+
+3
+00:00:06,920 --> 00:00:10,120
+Investida em fio de seda, ajudam a fugir do perigo.
+

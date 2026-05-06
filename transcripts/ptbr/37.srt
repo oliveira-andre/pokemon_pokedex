@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,000
+Vulpix é um pokémon do tipo fogo, com várias caudas enroladas.
+
+2
+00:00:04,000 --> 00:00:06,000
+Evolui para Ninetales.
+
+3
+00:00:06,000 --> 00:00:09,000
+Brazas e raio-confusão são usados com frequência.
+

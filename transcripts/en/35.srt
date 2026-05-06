@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:04,720
+Clefairy is a fairy-like Pokémon known for its mysterious charm.
+
+2
+00:00:04,720 --> 00:00:10,160
+It evolves into Clefable. Metronome and Sing are its signature moves.
+

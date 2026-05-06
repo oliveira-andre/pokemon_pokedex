@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:05,760
+Pidgeotto is a vigilant normal and flying type Pokémon that fiercely protects its territory.
+
+2
+00:00:06,400 --> 00:00:11,200
+It evolves from Pidgey. Wing attack and agility are often used.
+

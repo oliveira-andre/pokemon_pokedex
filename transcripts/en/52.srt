@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,960
+Meowth is a normal type Pokemon known for its love of shiny objects.
+
+2
+00:00:04,960 --> 00:00:06,920
+It evolves into Persian.
+
+3
+00:00:06,920 --> 00:00:09,800
+Scratch and Pay Day are its trademark moves.
+

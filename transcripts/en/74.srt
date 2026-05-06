@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+J-O Dude is a rock-and-ground type Pokémon often found in mountains.
+
+2
+00:00:05,000 --> 00:00:07,000
+It evolves into Graveler.
+
+3
+00:00:07,500 --> 00:00:10,000
+Rock throw and tackle are common.
+

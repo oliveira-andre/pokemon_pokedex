@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,560
+Geodude é um Pokémon dos tipos pedra e terra encontrado em montanhas.
+
+2
+00:00:05,560 --> 00:00:07,320
+Evolui para Graveler.
+
+3
+00:00:07,320 --> 00:00:10,360
+Lançamento de pedra e investidas são comuns.
+

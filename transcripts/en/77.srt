@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,000
+Ponyta is a fire-type Pokemon with blazing flames for a main.
+
+2
+00:00:04,000 --> 00:00:07,000
+It evolves into Rapidash.
+
+3
+00:00:07,000 --> 00:00:09,000
+Flame, Wheel, and Stomp are common.
+

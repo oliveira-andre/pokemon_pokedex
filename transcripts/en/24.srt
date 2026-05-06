@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,740
+Arbok is a poison-type Pokémon that intimidates enemies with a pattern on its hood.
+
+2
+00:00:05,740 --> 00:00:08,000
+It evolves from Ikons.
+
+3
+00:00:08,000 --> 00:00:10,720
+Acid and Crunch display its strength.
+

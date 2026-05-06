@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,760
+Charmander é um pokémon do tipo fogo com uma chama sempre acesa na cauda.
+
+2
+00:00:04,760 --> 00:00:08,840
+Evolui para Charmeleon e depois Charizard.
+
+3
+00:00:08,840 --> 00:00:11,800
+Brazas e lança-chamas revelam seu espírito ardente.
+

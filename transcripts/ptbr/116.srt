@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,280
+Horsea é um pokémon do tipo água que dispara tinta contra inimigos.
+
+2
+00:00:05,280 --> 00:00:07,640
+Evolui para a Seadra.
+
+3
+00:00:07,640 --> 00:00:10,680
+Bolha e jato de água são comuns.
+

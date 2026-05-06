@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:06,680
+Ivysaur é um Pokémon do tipo grama e veneno mais forte, com seu Bulbo começando a florescer.
+
+2
+00:00:06,680 --> 00:00:10,400
+Evolui de Bulbasaur e depois se torna Venusaur.
+
+3
+00:00:10,400 --> 00:00:13,840
+Folha navalha e pó do sono são ataques comuns.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,440
+Squirtle is a playful, water-type Pokémon that uses its shell for protection.
+
+2
+00:00:05,440 --> 00:00:09,840
+It evolves into War Tortle and Blastoise.
+
+3
+00:00:09,840 --> 00:00:12,640
+Water Gun and Bubble are common attacks.
+

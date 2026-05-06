@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,400
+Nidoquen é um Pokémon poderoso dos tipos Veneno e Terra, com força impressionante.
+
+2
+00:00:05,400 --> 00:00:07,040
+Evolui de Nidorina.
+
+3
+00:00:07,040 --> 00:00:09,840
+Terremoto e golpe de corpo mostram seu poder bruto.
+

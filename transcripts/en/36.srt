@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:03,680
+Clefable is a calm Pokemon said to live in quiet places.
+
+2
+00:00:03,680 --> 00:00:05,360
+It evolves from Clefairy.
+
+3
+00:00:06,160 --> 00:00:09,280
+Moonlight and Double Slap define its style.
+

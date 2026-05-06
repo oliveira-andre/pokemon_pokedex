@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Sand Slash é um pokémon do tipo terra com garras afiadas feitas para o combate.
+
+2
+00:00:05,000 --> 00:00:06,720
+Evolui de Sand Shrill.
+
+3
+00:00:06,720 --> 00:00:09,120
+Corte e terremoto são golpes devastadores.
+

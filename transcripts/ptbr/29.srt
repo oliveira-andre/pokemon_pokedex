@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,660
+Nidoranfemia é um pokémon do tipo veneno com audição excelente e presas afiadas.
+
+2
+00:00:05,660 --> 00:00:09,060
+Evolui para Nidorina e depois Nidoqueen.
+
+3
+00:00:09,060 --> 00:00:11,580
+Ferrão venenoso e chute duplo são comuns.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,600
+Pikachu é um Pokémon do tipo elétrico que armazena energia nas bochechas.
+
+2
+00:00:04,600 --> 00:00:06,260
+Evolui para Raichu.
+
+3
+00:00:06,260 --> 00:00:09,400
+Choque do trovão e ataque rápido são golpes icônicos.
+

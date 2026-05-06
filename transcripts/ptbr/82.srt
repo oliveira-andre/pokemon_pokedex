@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,520
+Magneton é formado por três Magnemites conectados.
+
+2
+00:00:04,520 --> 00:00:06,720
+Evolui de Magnemite.
+
+3
+00:00:06,720 --> 00:00:10,600
+Raio do Trovão e Triataque liberam muita energia.
+

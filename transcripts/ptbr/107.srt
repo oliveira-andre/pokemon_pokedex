@@ -1,0 +1,4 @@
+1
+00:00:00,000 --> 00:00:10,200
+Hitmonchan é um pokémon do tipo lutador que soca em velocidade incrível, não evolui, soco de fogo e soco de gelo são comuns.
+

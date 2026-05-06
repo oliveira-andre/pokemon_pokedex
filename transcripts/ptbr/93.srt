@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Hunter é um Pokémon dos tipos fantasma e veneno que adora assustar.
+
+2
+00:00:05,500 --> 00:00:07,000
+Evolui de Ghastly.
+
+3
+00:00:07,500 --> 00:00:11,000
+Bola sombria e hipnose são golpes marcantes.
+

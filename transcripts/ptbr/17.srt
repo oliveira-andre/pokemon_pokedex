@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:05,460
+Pidgeotto é um pokémon atento dos tipos normal e voador que protege seu território com ferocidade.
+
+2
+00:00:05,460 --> 00:00:10,000
+Evolui de Pidgey. Ataque de asa e agilidade são frequentes.
+

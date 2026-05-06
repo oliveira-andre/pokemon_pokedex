@@ -40,6 +40,25 @@ A bilingual Pokédex web app (Brazilian Portuguese + English) with PWA support, 
 3. `audios/{other-language}/{id}.mp3`
 4. `audios/{other-language}/default-{other-language}.mp3`
 
+### Transcripts
+- Timestamped transcripts live in `transcripts/ptbr` and `transcripts/en`.
+- Transcript files use the same base name as their matching audio file, but with the `.srt` extension.
+- Example: `audios/ptbr/default-ptbr.mp3` maps to `transcripts/ptbr/default-ptbr.srt`.
+- The app uses these SRT timestamps to sync the right visor captions and the blue light glow during audio playback.
+
+To instal whisper in case you dont have it:
+```sh
+pip install openai-whisper
+```
+
+When intstalled, to generate a transcript with Whisper, run the command from the audio folder or pass the full audio path:
+
+```sh
+whisper "default-ptbr.mp3" --language Portuguese --model medium
+```
+
+For this project, keep only the generated `.srt` file in the matching `transcripts/{language}` folder.
+
 ### PWA Notes
 - App can be installed as a standalone PWA.
 - Service worker caches app shell + `kanto-151.json` + local Kanto sprites.

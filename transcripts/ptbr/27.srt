@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,080
+Sentryl é um Pokémon do tipo terra que se enrola como uma bola para se proteger.
+
+2
+00:00:05,080 --> 00:00:07,040
+Evolui para Sent Slash.
+
+3
+00:00:07,040 --> 00:00:09,240
+Ataque de areia e escavar são comuns.
+

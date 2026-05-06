@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:06,000
+Kakuna é um pokémon dos tipos inseto e veneno que fica imóvel enquanto se prepara para evoluir.
+
+2
+00:00:06,000 --> 00:00:08,000
+Ele se tornará a Beedrill.
+
+3
+00:00:08,000 --> 00:00:11,000
+Endurecer e ferrão venenoso são suas defesas.
+

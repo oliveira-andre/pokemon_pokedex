@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,960
+Zubat is a poison and flying type Pokémon that navigates in darkness.
+
+2
+00:00:04,960 --> 00:00:07,520
+It evolves into Golbat.
+
+3
+00:00:07,520 --> 00:00:09,520
+Supersonic and Bite are often used.
+

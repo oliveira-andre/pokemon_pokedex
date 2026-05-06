@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,840
+Oddish is a grass- and poison-type Pokémon that absorbs moonlight.
+
+2
+00:00:04,840 --> 00:00:09,000
+It evolves into Gloom and later Vileplume.
+
+3
+00:00:09,000 --> 00:00:11,000
+Absorb and poison powder are common.
+

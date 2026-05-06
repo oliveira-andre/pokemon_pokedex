@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,040
+Abra is a psychic-type Pokémon that spends most of its time sleeping.
+
+2
+00:00:05,040 --> 00:00:08,720
+It evolves into Kadabra and Alakazam.
+
+3
+00:00:08,720 --> 00:00:11,040
+Teleport and Confusion are typical.
+

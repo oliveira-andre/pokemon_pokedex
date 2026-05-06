@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Muk é um pokémon do tipo veneno com corpo feito de resíduos tóxicos.
+
+2
+00:00:05,500 --> 00:00:07,000
+Evolui de Grimer.
+
+3
+00:00:07,700 --> 00:00:11,000
+Bomba de lodo e mínimos ar são frequentes.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Charizard is a powerful fire- and flying-type Pokémon that dominates the skies.
+
+2
+00:00:05,500 --> 00:00:07,500
+It evolves from Charmeleon.
+
+3
+00:00:08,000 --> 00:00:12,000
+Its intense flames fuel attacks like Flame, Thrower, and Fly.
+

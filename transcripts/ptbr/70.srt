@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:07,860
+Weeping Bell é um pokémon dos tipos grama e veneno, que prende presas com cipós.
+
+2
+00:00:07,860 --> 00:00:10,180
+Evolui de Bellsprout.
+
+3
+00:00:10,180 --> 00:00:13,320
+Ácido e folha-navalha são frequentes.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:06,760
+Chansey é um pokémon do tipo normal, conhecido por sua gentileza e poderes de cura.
+
+2
+00:00:06,760 --> 00:00:08,760
+Evolui para Blissey.
+
+3
+00:00:08,760 --> 00:00:12,760
+Ovo Bomba e Duplo Tapa são comuns.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,440
+Slowpoke is a water- and psychic-type Pokémon known for its slow reactions.
+
+2
+00:00:05,440 --> 00:00:08,040
+It evolves into Slowbro.
+
+3
+00:00:08,040 --> 00:00:10,840
+Confusion and Water Gun are typical.
+

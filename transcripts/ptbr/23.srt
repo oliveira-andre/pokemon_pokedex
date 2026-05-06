@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,520
+Hecans é um Pokémon do tipo veneno que se move silenciosamente pela grama e pelas sombras.
+
+2
+00:00:05,520 --> 00:00:07,280
+Evolui para Arbok.
+
+3
+00:00:07,280 --> 00:00:10,200
+Ferrão venenoso e mordida são usados com frequência.
+

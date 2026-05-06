@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,000
+Graveler is a rock-and-ground-type Pokémon with a rugged body.
+
+2
+00:00:04,000 --> 00:00:07,000
+It evolves from Geodude.
+
+3
+00:00:07,000 --> 00:00:10,000
+Rock Slide and Earthquake are powerful.
+

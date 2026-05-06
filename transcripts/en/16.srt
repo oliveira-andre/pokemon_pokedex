@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,600
+Pidgey is a gentle, normal, and flying-type Pokémon commonly found in open fields.
+
+2
+00:00:05,600 --> 00:00:09,200
+It evolves into a Pidgeotto and Pidgeot.
+
+3
+00:00:09,200 --> 00:00:12,000
+Gust and Quick Attack are typical moves.
+

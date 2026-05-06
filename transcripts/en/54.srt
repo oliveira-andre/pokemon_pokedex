@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,180
+Psyduck is a water-type Pokémon constantly plagued by headaches.
+
+2
+00:00:05,180 --> 00:00:07,920
+It evolves into Golduck.
+
+3
+00:00:07,920 --> 00:00:10,960
+Water Gun and Confusion unleash its hidden power.
+

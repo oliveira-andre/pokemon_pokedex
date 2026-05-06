@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,800
+Ninetales is a mystical fire-type Pokemon set to possess great wisdom.
+
+2
+00:00:04,800 --> 00:00:06,900
+It evolves from Vulpix.
+
+3
+00:00:06,900 --> 00:00:10,200
+Flamethrower and Fire Spin are iconic.
+

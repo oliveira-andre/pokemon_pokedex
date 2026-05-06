@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,340
+Meowth é um Pokémon do tipo normal conhecido por sua paixão por coisas brilhantes.
+
+2
+00:00:05,340 --> 00:00:06,980
+Evolui para Persian.
+
+3
+00:00:06,980 --> 00:00:10,340
+Arranhão e Dia de Pagamento são suas marcas registradas.
+

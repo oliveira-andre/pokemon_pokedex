@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:08,000
+Bellsprout é um pokémon dos tipos grama e veneno que usa seu corpo flexível para atacar.
+
+2
+00:00:08,000 --> 00:00:10,440
+Evolui para Whipping Bell.
+
+3
+00:00:10,440 --> 00:00:13,720
+Chicote de vinha e enrolar são comuns.
+

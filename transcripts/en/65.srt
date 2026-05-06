@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,200
+Alakazam is a Psychic-type Pokémon with an IQ set to surpass supercomputers.
+
+2
+00:00:05,700 --> 00:00:07,400
+It evolves from Kadabra.
+
+3
+00:00:08,000 --> 00:00:10,800
+Psychic and Recover define its style.
+

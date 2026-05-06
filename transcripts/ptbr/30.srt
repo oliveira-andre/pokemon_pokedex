@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,240
+Nidorina é um Pokémon do tipo veneno que se torna mais defensivo ao amadurecer.
+
+2
+00:00:05,240 --> 00:00:08,920
+Evolui de Nidoran Fêmea e depois Nidoqueen.
+
+3
+00:00:08,920 --> 00:00:11,960
+Mordida e golpe de corpo são usados com frequência.
+

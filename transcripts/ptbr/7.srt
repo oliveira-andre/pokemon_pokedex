@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,040
+Squirtle é um Pokémon do tipo água-brincalhão que usa seu casco como proteção.
+
+2
+00:00:05,040 --> 00:00:07,960
+Evolui para Wartortle e Blastoise.
+
+3
+00:00:07,960 --> 00:00:10,360
+Jato de água e bolha são ataques comuns.
+

@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:03,920
+Machamp is a fighting-type Pokémon with four powerful arms.
+
+2
+00:00:04,560 --> 00:00:10,320
+It evolves from Machoki. Cross Chop and Dynamic Punch are devastating.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,440
+Ducktrio is a ground-type Pokémon formed by three Diglett working together.
+
+2
+00:00:05,440 --> 00:00:07,880
+It evolves from Diglett.
+
+3
+00:00:07,880 --> 00:00:11,040
+Dig an Earthquake hit with surprising power!
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,420
+Spiral é um Pokémon agressivo dos tipos normal e voador que nunca foge de uma briga.
+
+2
+00:00:05,420 --> 00:00:07,260
+Evolui para Feral.
+
+3
+00:00:07,260 --> 00:00:09,900
+Bicada e ataque de fúria são golpes comuns.
+

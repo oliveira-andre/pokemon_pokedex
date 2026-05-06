@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,500
+Bulbasaur é um Pokémon calmo do tipo grama e veneno, que carrega um Bulbo nas costas.
+
+2
+00:00:05,500 --> 00:00:08,940
+Ele evolui para Ivysaur e depois Venusaur.
+
+3
+00:00:08,940 --> 00:00:13,600
+Costuma atacar com Chicote de Vinha e recuperar energia com Semente Sanguissuga.
+

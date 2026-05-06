@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,400
+Mankey é um pokémon do tipo lutador que se enfurece facilmente.
+
+2
+00:00:04,400 --> 00:00:06,160
+Evolui para Primeape.
+
+3
+00:00:06,160 --> 00:00:10,000
+Golpe de karatê e golpes de fúria atacam sem controle.
+

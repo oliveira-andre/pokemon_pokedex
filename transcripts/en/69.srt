@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,840
+Bellsprout is a grass and poison type Pokémon that uses its flexible body to attack.
+
+2
+00:00:05,840 --> 00:00:08,720
+It evolves into Weep and Bell.
+
+3
+00:00:08,720 --> 00:00:11,360
+Vine, Whip and Rap are common.
+

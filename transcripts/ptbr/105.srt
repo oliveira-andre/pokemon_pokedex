@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,280
+Marovak é um Pokémon do tipo terra que luta abilmente com ossos.
+
+2
+00:00:05,280 --> 00:00:07,560
+Evolui de Kubone.
+
+3
+00:00:07,560 --> 00:00:10,920
+Bumerangue de ossos e Fúria são poderosos.
+

@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:05,200
+Sand Slash is a ground-type Pokémon with sharp claws built for combat.
+
+2
+00:00:05,200 --> 00:00:10,480
+It evolves from Sand Shrew. Slash and Earthquake are devastating moves.
+

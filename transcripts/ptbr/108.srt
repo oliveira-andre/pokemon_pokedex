@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,520
+Lickitung é um pokémon do tipo normal com uma língua longa e elástica.
+
+2
+00:00:05,520 --> 00:00:07,760
+Evolui para a Lick Lick.
+
+3
+00:00:07,760 --> 00:00:10,080
+Lambida e golpes são típicos.
+

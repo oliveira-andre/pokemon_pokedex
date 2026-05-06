@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:03,920
+Gloom é um pokémon dos tipos grama e veneno com um cheiro forte.
+
+2
+00:00:04,280 --> 00:00:05,520
+Evolui, diodes!
+
+3
+00:00:05,800 --> 00:00:08,600
+Ácido e pó dos sonos são usados com frequência.
+

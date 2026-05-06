@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,840
+Victreebel is a grass and poison type Pokemon that lures prey with sweet aromas.
+
+2
+00:00:05,840 --> 00:00:08,240
+It evolves from Weepinbell.
+
+3
+00:00:08,240 --> 00:00:10,320
+Leaf Blade and Acid are deadly.
+

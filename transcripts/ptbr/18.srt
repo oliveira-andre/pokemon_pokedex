@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,640
+Pidgeo é um Pokémon majestoso dos tipos normal e voador que voa a velocidades incríveis.
+
+2
+00:00:05,640 --> 00:00:07,760
+É a evolução final de Pidgey.
+
+3
+00:00:07,760 --> 00:00:10,200
+Furacão e golpe aéreo mostram seu poder.
+

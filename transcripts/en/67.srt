@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:03,840
+Mach-O-K is a fighting-type Pokémon with tremendous strength.
+
+2
+00:00:03,840 --> 00:00:05,880
+It evolves from Mach-Up.
+
+3
+00:00:05,880 --> 00:00:09,080
+Seismic Toss and Submission are often used.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,280
+Shellder é um Pokémon do tipo água protegido por uma concha resistente.
+
+2
+00:00:05,280 --> 00:00:07,080
+Evolui para Cloyster.
+
+3
+00:00:07,080 --> 00:00:09,280
+Prender e raio de gelo são comuns.
+

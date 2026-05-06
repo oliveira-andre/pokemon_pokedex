@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,120
+Raichu is a fast electric-type Pokemon overflowing with powerful voltage.
+
+2
+00:00:05,120 --> 00:00:07,760
+It evolves from Pikachu.
+
+3
+00:00:07,760 --> 00:00:10,960
+Thunderbolt and Thunder Punch hit with force.
+

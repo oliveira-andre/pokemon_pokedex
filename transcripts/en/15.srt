@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,600
+Beedrill is a fast buggy and poison-type Pokémon that attacks with relentless speed.
+
+2
+00:00:05,600 --> 00:00:07,760
+It evolves from Kakuna.
+
+3
+00:00:07,760 --> 00:00:11,360
+Twin-Eedle and Pin Missile strike in rapid succession.
+

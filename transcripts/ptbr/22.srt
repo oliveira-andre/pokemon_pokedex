@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,280
+Feral é um Pokémon poderoso dos tipos normal e voador com um bico longo e afiado.
+
+2
+00:00:05,280 --> 00:00:07,080
+Evolui de Spiral.
+
+3
+00:00:07,080 --> 00:00:10,840
+Bicada broca e movimento espelho são técnicas marcantes.
+

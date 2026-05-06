@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,560
+Rhyhorn é um pokémon dos tipos pedra e terra, com força física imensa.
+
+2
+00:00:05,560 --> 00:00:07,760
+Evolui para Rhydon.
+
+3
+00:00:07,760 --> 00:00:11,040
+Pisotear e explosão de rochas são comuns.
+

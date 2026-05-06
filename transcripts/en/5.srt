@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,200
+Charmeleon is a hot-tempered, fire-type Pokémon that thrives in battle.
+
+2
+00:00:05,200 --> 00:00:09,320
+It evolves from Charmander and becomes Charizard.
+
+3
+00:00:09,320 --> 00:00:12,080
+Fire Fang and Flamethrower are often used.
+

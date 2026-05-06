@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Venomoth é um pokémon dos tipos inseto e veneno que espalha escamas tóxicas.
+
+2
+00:00:05,500 --> 00:00:07,000
+Evolui de Venonath.
+
+3
+00:00:07,000 --> 00:00:10,000
+Psíquico e pó do sono são golpes marcantes.
+

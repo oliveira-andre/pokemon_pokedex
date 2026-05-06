@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,200
+Kingler é um pokémon do tipo água, com uma garra enorme.
+
+2
+00:00:04,500 --> 00:00:06,000
+Evolui de Krabby.
+
+3
+00:00:06,300 --> 00:00:10,000
+Martelo de caranguejo e guilhotina atingem forte.
+

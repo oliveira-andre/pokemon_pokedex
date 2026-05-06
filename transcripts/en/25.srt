@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,440
+Pikachu is an electric-type Pokémon that stores electricity in its cheeks.
+
+2
+00:00:05,440 --> 00:00:08,320
+It evolves into Raichu.
+
+3
+00:00:08,320 --> 00:00:11,520
+Thundershock and Quick Attack are iconic moves.
+

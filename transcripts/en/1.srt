@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:06,000
+Bulbasaur is a calm grass and poison type Pokemon that carries a plant bulb on its back.
+
+2
+00:00:06,000 --> 00:00:09,760
+It evolves into Ivysaur and later Venusaur.
+
+3
+00:00:10,480 --> 00:00:14,960
+It often attacks using Vine Whip and absorbs energy with Leech Seed.
+

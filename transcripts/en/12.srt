@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:06,160
+Butterfree is a bug-and-flying type Pokémon that scatters mysterious powders while flying.
+
+2
+00:00:06,160 --> 00:00:08,640
+It evolves from Metapod.
+
+3
+00:00:08,640 --> 00:00:12,160
+Confusion and Sleep Powder are signature moves.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Nidioqueen is a powerful poison- and ground-type Pokémon with immense strength.
+
+2
+00:00:05,000 --> 00:00:08,000
+It evolves from Nidorina.
+
+3
+00:00:08,000 --> 00:00:11,000
+Earthquake and Body Slam showcase its raw power.
+

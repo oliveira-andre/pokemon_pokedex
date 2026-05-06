@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,840
+Vileplume is a grass and poison type Pokemon with massive petals.
+
+2
+00:00:04,840 --> 00:00:07,040
+It evolves from Gloom.
+
+3
+00:00:07,040 --> 00:00:09,360
+Petal Dance and Solar Beam show its power.
+

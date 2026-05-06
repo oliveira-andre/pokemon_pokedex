@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,840
+Golbat is a fast-poison and flying-type Pokémon that drains energy.
+
+2
+00:00:04,840 --> 00:00:07,240
+It evolves from Subat.
+
+3
+00:00:07,240 --> 00:00:10,640
+Wing Attack and Leech Life are signature moves.
+

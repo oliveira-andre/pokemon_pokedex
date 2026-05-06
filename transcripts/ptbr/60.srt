@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Poliwag é um pokémon do tipo água com uma espiral visível na barriga.
+
+2
+00:00:05,000 --> 00:00:07,000
+Evolui para Poliwhirl.
+
+3
+00:00:07,000 --> 00:00:10,000
+Bolha e jato de água são comuns.
+

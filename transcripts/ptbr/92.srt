@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Ghastly é um pokémon dos tipos fantasma e veneno feito de gás tóxico.
+
+2
+00:00:05,500 --> 00:00:08,000
+Evolui para Hunter e Gengar.
+
+3
+00:00:08,500 --> 00:00:11,500
+Lambida e golpe noturno são comuns.
+

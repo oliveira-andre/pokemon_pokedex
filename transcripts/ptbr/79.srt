@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:07,640
+Slowpoke é um pokémon dos tipos água e psíquico, conhecido por suas reações lentas.
+
+2
+00:00:07,640 --> 00:00:10,000
+Evolui para Slowbro.
+
+3
+00:00:10,000 --> 00:00:12,720
+Confusão e jato de água são típicos.
+

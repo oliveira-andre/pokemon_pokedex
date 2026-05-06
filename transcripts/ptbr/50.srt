@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:03,820
+Daglet é um pokémon do tipo terra que vive no subsolo.
+
+2
+00:00:03,820 --> 00:00:05,760
+Evolui para Ducktrio.
+
+3
+00:00:05,760 --> 00:00:08,580
+Escavar e ataque de areia são usados com frequência.
+

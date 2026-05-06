@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,800
+Metapod é um pokémon do tipo inseto, que depende de ser o casulo endurecido para sobreviver aos ataques.
+
+2
+00:00:06,200 --> 00:00:07,900
+Ele evolui para Butterfree.
+
+3
+00:00:08,400 --> 00:00:11,600
+Endurecer e investida são seus principais golpes.
+

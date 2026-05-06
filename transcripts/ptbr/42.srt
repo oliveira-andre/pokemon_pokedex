@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,600
+Golbat é um Pokémon rápido, dos tipos veneno e voador que drenam a energia.
+
+2
+00:00:04,600 --> 00:00:06,240
+Evolui de Zubat.
+
+3
+00:00:06,240 --> 00:00:09,240
+Ataque de asa e roubo de vida são marcantes.
+

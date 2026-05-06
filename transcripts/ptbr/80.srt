@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:06,800
+Slowbro é um Pokémon dos tipos água e psíquico, com inteligência aumentada.
+
+2
+00:00:06,800 --> 00:00:09,080
+Evolui de Slowpoke.
+
+3
+00:00:09,080 --> 00:00:12,440
+Psíquico e Surf são golpes poderosos.
+

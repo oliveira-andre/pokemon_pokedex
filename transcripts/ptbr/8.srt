@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,980
+Wartortle é um pokémon do tipo água conhecido por sua resistência e técnica.
+
+2
+00:00:04,980 --> 00:00:08,700
+Evolui de Squirtle e depois Blastoise.
+
+3
+00:00:08,700 --> 00:00:11,100
+Surf e recuar são movimentos frequentes.
+

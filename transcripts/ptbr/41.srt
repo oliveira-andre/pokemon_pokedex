@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,620
+Zubat é um Pokémon dos tipos veneno e voador que se orienta no escuro.
+
+2
+00:00:04,620 --> 00:00:06,420
+Evolui para Golbat.
+
+3
+00:00:06,420 --> 00:00:08,800
+Supersônico e mordida são frequentes.
+

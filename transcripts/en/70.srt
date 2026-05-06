@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:05,280
+Weepinbell is a grass and poison type Pokémon that traps prey with vines.
+
+2
+00:00:05,280 --> 00:00:10,480
+It evolves from Bellsprout. Acid and Razorleaf are often used.
+

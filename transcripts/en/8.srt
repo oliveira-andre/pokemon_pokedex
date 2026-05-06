@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,200
+Wartortle is a water-type Pokémon known for its endurance and skill.
+
+2
+00:00:05,200 --> 00:00:09,840
+It evolves from Squirtle and later becomes Blastoise.
+
+3
+00:00:09,840 --> 00:00:12,800
+Surf and Withdraw are frequently used.
+

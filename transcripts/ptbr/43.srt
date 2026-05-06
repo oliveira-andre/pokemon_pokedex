@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,680
+Oddish é um Pokémon dos tipos grama e veneno que absorve luz da lua, evolui para glum e
+
+2
+00:00:05,680 --> 00:00:07,520
+depois vileplume.
+
+3
+00:00:07,520 --> 00:00:09,840
+Absorver e pó venenoso são comuns.
+

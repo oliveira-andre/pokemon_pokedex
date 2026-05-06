@@ -4,10 +4,12 @@ const pokedexNumber = document.querySelector('.pokedex-number');
 const pokedexImage = document.querySelector('.pokedex-image');
 const pokedexForm = document.querySelector('.pokedex-form');
 const pokedexInput = document.querySelector('.pokedex-search-input');
+const pokedexLeftPanel = document.querySelector('.pokedex-left-panel');
 const pokedexPrevButton = document.querySelector('.pokedex-button-prev');
 const pokedexNextButton = document.querySelector('.pokedex-button-next');
 const pokedexLanguageButtons = document.querySelectorAll('.pokedex-toggle');
 const pokedexRightSubtitle = document.querySelector('.pokedex-right-subtitle');
+const pokedexTranscriptDisplay = document.querySelector('.pokedex-transcript-display');
 const pokedexSplash = document.querySelector('#pokedex-pwa-splash');
 
 // Core data sources.
@@ -51,12 +53,120 @@ let latestRenderRequest = 0;
 let currentLanguage = 'pt';
 let isRendering = false;
 let hasTriedLoadingLocalKantoData = false;
+let captionAnimationFrame = null;
+let currentCaptionIndex = -1;
+let latestAudioRequest = 0;
 
 // Reuse one audio element to avoid creating multiple players.
 pokedexAudio.preload = 'none';
 
+const setAudioPlaybackState = (isPlaying) => {
+  pokedexLeftPanel?.classList.toggle('pokedex-audio-playing', isPlaying);
+};
+
+const setTranscriptText = (text = '') => {
+  if (pokedexTranscriptDisplay) {
+    pokedexTranscriptDisplay.textContent = text;
+  }
+};
+
 const getTranslation = (key) => translations[currentLanguage][key] || '';
 const normalizePokemonQuery = (value) => String(value).trim().toLowerCase();
+
+const parseSrtTimestamp = (timestamp) => {
+  const [, hours, minutes, seconds, milliseconds] = timestamp.match(/(\d{2}):(\d{2}):(\d{2}),(\d{3})/) || [];
+  if (!hours) {
+    return 0;
+  }
+
+  return (Number(hours) * 3600) + (Number(minutes) * 60) + Number(seconds) + (Number(milliseconds) / 1000);
+};
+
+const parseSrt = (srtText) => srtText
+  .trim()
+  .split(/\n\s*\n/)
+  .map((block) => {
+    const lines = block.split('\n').map((line) => line.trim()).filter(Boolean);
+    const timingLine = lines.find((line) => line.includes('-->'));
+    if (!timingLine) {
+      return null;
+    }
+
+    const [start, end] = timingLine.split('-->').map((value) => value.trim());
+    const text = lines.slice(lines.indexOf(timingLine) + 1).join(' ');
+    return {
+      start: parseSrtTimestamp(start),
+      end: parseSrtTimestamp(end),
+      text
+    };
+  })
+  .filter((cue) => cue?.text);
+
+const fetchTranscriptCues = async (transcriptPath) => {
+  try {
+    const response = await fetch(transcriptPath);
+    if (!response.ok) {
+      return [];
+    }
+
+    return parseSrt(await response.text());
+  } catch {
+    return [];
+  }
+};
+
+const audioFileExists = async (audioPath) => {
+  try {
+    const response = await fetch(audioPath, { method: 'HEAD' });
+    return response.ok;
+  } catch {
+    return false;
+  }
+};
+
+const stopTranscriptSync = ({ clearText = true } = {}) => {
+  if (captionAnimationFrame !== null) {
+    cancelAnimationFrame(captionAnimationFrame);
+    captionAnimationFrame = null;
+  }
+
+  currentCaptionIndex = -1;
+  setAudioPlaybackState(false);
+
+  if (clearText) {
+    setTranscriptText();
+  }
+};
+
+const startTranscriptSync = (cues, audioRequestId) => {
+  stopTranscriptSync({ clearText: true });
+
+  if (!cues.length) {
+    return;
+  }
+
+  const syncCaption = () => {
+    if (audioRequestId !== latestAudioRequest || pokedexAudio.paused || pokedexAudio.ended) {
+      stopTranscriptSync({ clearText: pokedexAudio.ended || audioRequestId !== latestAudioRequest });
+      return;
+    }
+
+    const currentTime = pokedexAudio.currentTime;
+    const nextCaptionIndex = cues.findIndex((cue) => currentTime >= cue.start && currentTime <= cue.end);
+    const activeCue = nextCaptionIndex >= 0 ? cues[nextCaptionIndex] : null;
+
+    setAudioPlaybackState(Boolean(activeCue));
+
+    if (nextCaptionIndex !== currentCaptionIndex) {
+      currentCaptionIndex = nextCaptionIndex;
+      setTranscriptText(activeCue?.text || '');
+    }
+
+    captionAnimationFrame = requestAnimationFrame(syncCaption);
+  };
+
+  captionAnimationFrame = requestAnimationFrame(syncCaption);
+};
 
 // Converts user input to a valid Pokemon ID when possible.
 // Returns null for names, invalid numbers, decimals, and values < 1.
@@ -200,6 +310,8 @@ const initializePokemonLimit = async () => {
 
 const stopPokemonAudio = () => {
   // Reset source and playback position before trying next candidate audio.
+  latestAudioRequest += 1;
+  stopTranscriptSync();
   pokedexAudio.pause();
   pokedexAudio.currentTime = 0;
   pokedexAudio.removeAttribute('src');
@@ -209,29 +321,52 @@ const stopPokemonAudio = () => {
 const playPokemonAudio = async (pokemonId) => {
   // Audio fallback order is language-aware:
   // current-language specific -> current-language default -> other-language specific -> other-language default.
+  const audioRequestId = ++latestAudioRequest;
   const primaryAudioFolder = currentLanguage === 'pt' ? 'ptbr' : 'en';
   const fallbackAudioFolder = primaryAudioFolder === 'ptbr' ? 'en' : 'ptbr';
 
   const audioCandidates = [
-    `./audios/${primaryAudioFolder}/${pokemonId}.mp3`,
-    `./audios/${primaryAudioFolder}/default-${primaryAudioFolder}.mp3`,
-    `./audios/${fallbackAudioFolder}/${pokemonId}.mp3`,
-    `./audios/${fallbackAudioFolder}/default-${fallbackAudioFolder}.mp3`
+    { audioPath: `./audios/${primaryAudioFolder}/${pokemonId}.mp3`, transcriptPath: `./transcripts/${primaryAudioFolder}/${pokemonId}.srt` },
+    { audioPath: `./audios/${primaryAudioFolder}/default-${primaryAudioFolder}.mp3`, transcriptPath: `./transcripts/${primaryAudioFolder}/default-${primaryAudioFolder}.srt` },
+    { audioPath: `./audios/${fallbackAudioFolder}/${pokemonId}.mp3`, transcriptPath: `./transcripts/${fallbackAudioFolder}/${pokemonId}.srt` },
+    { audioPath: `./audios/${fallbackAudioFolder}/default-${fallbackAudioFolder}.mp3`, transcriptPath: `./transcripts/${fallbackAudioFolder}/default-${fallbackAudioFolder}.srt` }
   ];
 
-  for (const audioPath of audioCandidates) {
+  stopTranscriptSync();
+
+  for (const { audioPath, transcriptPath } of audioCandidates) {
     try {
+      if (audioRequestId !== latestAudioRequest) {
+        return;
+      }
+
+      if (!(await audioFileExists(audioPath))) {
+        continue;
+      }
+
       if (pokedexAudio.getAttribute('src') !== audioPath) {
         pokedexAudio.src = audioPath;
       }
       await pokedexAudio.play();
+
+      if (audioRequestId !== latestAudioRequest) {
+        return;
+      }
+
+      const transcriptCues = await fetchTranscriptCues(transcriptPath);
+      startTranscriptSync(transcriptCues, audioRequestId);
       return;
     } catch {
+      if (audioRequestId === latestAudioRequest) {
+        stopTranscriptSync();
+      }
       // Continue trying candidates until one succeeds.
     }
   }
 
-  stopPokemonAudio();
+  if (audioRequestId === latestAudioRequest) {
+    stopPokemonAudio();
+  }
 };
 
 const setLoadingState = () => {
@@ -384,6 +519,12 @@ for (const languageButton of pokedexLanguageButtons) {
     applyLanguage(nextLanguage);
   });
 }
+
+// Keep captions and the PNG light overlay synchronized with transcript timing.
+pokedexAudio.addEventListener('pause', () => stopTranscriptSync({ clearText: false }));
+pokedexAudio.addEventListener('ended', () => stopTranscriptSync());
+pokedexAudio.addEventListener('emptied', () => stopTranscriptSync());
+pokedexAudio.addEventListener('error', () => stopTranscriptSync());
 
 // Keyboard navigation handler (when not typing in search input).
 document.addEventListener('keydown', (event) => {

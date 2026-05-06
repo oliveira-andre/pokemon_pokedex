@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:06,400
+Voltorb é um pokémon do tipo elétrico que se parece com uma pokebola.
+
+2
+00:00:06,400 --> 00:00:08,960
+Evolui para Electrode.
+
+3
+00:00:08,960 --> 00:00:12,200
+Faísca e autodestruição são comuns.
+

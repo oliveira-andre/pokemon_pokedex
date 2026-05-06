@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,800
+Weedle é um Pokémon dos tipos inseto e veneno, com um ferrão venenoso afiado.
+
+2
+00:00:04,800 --> 00:00:08,000
+Evolui para Kakuna e depois Beedrill.
+
+3
+00:00:08,000 --> 00:00:10,640
+Ferrão venenoso e fio de seda são comuns.
+

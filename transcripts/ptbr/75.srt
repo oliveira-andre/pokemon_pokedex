@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:05,460
+Graveler é um Pokémon dos tipos pedra e terra com corpo resistente.
+
+2
+00:00:05,460 --> 00:00:11,000
+Evolui de Geodude. Deslizamento de rochas e terremotos são poderosos.
+

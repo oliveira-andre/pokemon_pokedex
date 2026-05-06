@@ -96,6 +96,66 @@ body {
   -webkit-user-drag: none;
 }
 
+.pokedex-audio-light {
+  position: absolute;
+  z-index: 3;
+  top: 2.6%;
+  left: 9.7%;
+  width: 16%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    radial-gradient(circle at 48% 36%, rgba(255, 255, 255, 0.95) 0 13%, rgba(149, 255, 255, 0.92) 14% 28%, rgba(18, 224, 239, 0.84) 42%, rgba(0, 146, 191, 0.78) 68%, rgba(0, 75, 118, 0.4) 100%);
+  box-shadow: 0 0 16px 7px rgba(64, 238, 255, 0.7), inset 0 0 14px rgba(255, 255, 255, 0.85);
+  transform: scale(0.96);
+}
+
+.pokedex-left-panel.pokedex-audio-playing .pokedex-audio-light {
+  opacity: 1;
+  animation: pokedexAudioGlow 520ms steps(2, end) infinite;
+}
+
+.pokedex-transcript-display {
+  position: absolute;
+  z-index: 3;
+  top: 24.6%;
+  left: 12.8%;
+  width: 66.5%;
+  height: 15.7%;
+  padding: 3.2% 4%;
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  overflow: hidden;
+  pointer-events: none;
+  color: #b6ff32;
+  font-size: clamp(0.64rem, 1.15vw, 0.84rem);
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+  text-shadow: 0 0 4px rgba(182, 255, 50, 0.95), 0 0 10px rgba(92, 255, 63, 0.55);
+}
+
+.pokedex-transcript-display::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.18;
+  background: repeating-linear-gradient(
+    180deg,
+    transparent 0,
+    transparent 5px,
+    rgba(182, 255, 50, 0.55) 6px
+  );
+}
+
 .pokedex-image {
   position: absolute;
   z-index: 2;
@@ -365,5 +425,31 @@ body {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes pokedexAudioGlow {
+  0% {
+    filter: brightness(1.05) saturate(1.1);
+    box-shadow: 0 0 14px 5px rgba(64, 238, 255, 0.58), inset 0 0 12px rgba(255, 255, 255, 0.76);
+    transform: scale(0.95);
+  }
+
+  35% {
+    filter: brightness(1.7) saturate(1.8);
+    box-shadow: 0 0 30px 14px rgba(88, 247, 255, 0.9), inset 0 0 22px rgba(255, 255, 255, 0.94);
+    transform: scale(1.04);
+  }
+
+  70% {
+    filter: brightness(1.28) saturate(1.45);
+    box-shadow: 0 0 22px 10px rgba(26, 212, 255, 0.78), inset 0 0 16px rgba(255, 255, 255, 0.88);
+    transform: scale(0.99);
+  }
+
+  100% {
+    filter: brightness(1.9) saturate(2);
+    box-shadow: 0 0 34px 16px rgba(125, 252, 255, 0.96), inset 0 0 24px rgba(255, 255, 255, 0.98);
+    transform: scale(1.06);
   }
 }

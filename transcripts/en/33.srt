@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,080
+Nidorino is a poison type Pokemon that becomes aggressive when threatened.
+
+2
+00:00:05,080 --> 00:00:08,920
+It evolves from Nidoran male and later Nidoking.
+
+3
+00:00:08,920 --> 00:00:11,640
+Horn, attack and double kick are often used.
+

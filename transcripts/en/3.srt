@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,840
+Venusaur is the final grass and poison type evolution, powered by sunlight.
+
+2
+00:00:05,840 --> 00:00:10,960
+When its flower blooms, it releases powerful energy.
+
+3
+00:00:10,960 --> 00:00:14,560
+Solar Beam and Petal Dance are its signature moves.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,800
+Sand Shrew is a ground-type Pokémon that curls into a ball to protect itself.
+
+2
+00:00:05,520 --> 00:00:07,680
+It evolves into Sand Slash.
+
+3
+00:00:08,720 --> 00:00:11,920
+Sand Attack and Dig are commonly used.
+

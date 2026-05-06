@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,760
+Metapod is a bug-type Pokémon that relies on a hardened shell to survive attacks.
+
+2
+00:00:05,760 --> 00:00:08,520
+It evolves into Butterfree.
+
+3
+00:00:08,520 --> 00:00:10,680
+Harden and tackle are its main moves.
+

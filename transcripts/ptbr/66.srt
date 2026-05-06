@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,760
+Matchup é um Pokémon do tipo lutador que treina sem parar.
+
+2
+00:00:04,760 --> 00:00:08,320
+Evolui para Machoke e Mashump.
+
+3
+00:00:08,320 --> 00:00:11,960
+Chute baixo e golpe de karatê são comuns.
+

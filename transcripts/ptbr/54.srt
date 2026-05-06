@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,920
+Psyduck é um pokémon do tipo água atormentado por fortes dores de cabeça.
+
+2
+00:00:04,920 --> 00:00:06,680
+Evolui para Golduck.
+
+3
+00:00:06,680 --> 00:00:09,560
+Jato de água e confusão liberam seu poder oculto.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,240
+Arcanine é um Pokémon lendário do tipo fogo conhecido por sua velocidade incrível.
+
+2
+00:00:05,240 --> 00:00:07,560
+Evolui de Growlithe.
+
+3
+00:00:07,560 --> 00:00:10,440
+Lança chamas e velocidade extrema o definem.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:06,100
+Farfetch'd é um pokémon dos tipos normal e voador que luta usando um talo de alho-poró.
+
+2
+00:00:06,800 --> 00:00:07,900
+Não evolui.
+
+3
+00:00:08,300 --> 00:00:12,100
+Corte e cortador de fúria são suas especialidades.
+

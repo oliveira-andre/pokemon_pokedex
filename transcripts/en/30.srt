@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,440
+Nidorina is a poison-type Pokémon that becomes more defensive as it matures.
+
+2
+00:00:05,440 --> 00:00:09,760
+It evolves from Nidoran Female and later Nidoqueen.
+
+3
+00:00:09,760 --> 00:00:12,000
+Bite and Body Slam are often used.
+

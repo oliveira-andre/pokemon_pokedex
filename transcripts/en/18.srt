@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:05,280
+Pidgeot is a majestic normal and flying type Pokemon that soars at incredible speeds.
+
+2
+00:00:06,000 --> 00:00:12,240
+It is the final evolution of Pidgey. Hurricane and Aerial Ace define its power.
+

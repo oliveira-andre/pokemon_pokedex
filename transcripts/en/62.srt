@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:04,080
+Poliwrath is a water and fighting type Pokémon with immense strength.
+
+2
+00:00:04,080 --> 00:00:09,680
+It evolves from Poliwhirl. Submission and Hydro Pump are powerful.
+

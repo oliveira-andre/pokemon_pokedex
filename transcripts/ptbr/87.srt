@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,340
+Delgong é um pokémon dos tipos água e gelo que nada com elegância.
+
+2
+00:00:05,340 --> 00:00:07,340
+Evolui de Ciel.
+
+3
+00:00:07,340 --> 00:00:11,180
+Raio-aurora e raio de gelo são golpes marcantes.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:06,920
+Dodo é um Pokémon dos tipos normal e voador, com duas cabeças que pensam separadamente.
+
+2
+00:00:06,920 --> 00:00:09,160
+Evolui para Dodrio.
+
+3
+00:00:09,160 --> 00:00:11,440
+Bicada e Fúria são comuns.
+

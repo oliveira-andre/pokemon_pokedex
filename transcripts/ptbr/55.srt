@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,600
+Golduck é um pokémon rápido do tipo água com fortes habilidades psíquicas.
+
+2
+00:00:05,600 --> 00:00:07,360
+Evolui, Deepside Duck.
+
+3
+00:00:07,360 --> 00:00:10,280
+Surf e Hydrobomba são devastadores.
+

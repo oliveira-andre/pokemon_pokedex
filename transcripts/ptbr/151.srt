@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:06,240
+Mew é um pokémon raro do tipo psíquico, que contém o DNA de todos os pokémon.
+
+2
+00:00:06,240 --> 00:00:07,920
+Não evolui.
+
+3
+00:00:07,920 --> 00:00:11,560
+Psíquico e transformação são golpes marcantes.
+

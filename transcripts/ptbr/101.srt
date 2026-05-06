@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Eletrode é um pokémon do tipo elétrico que armazena energia extrema.
+
+2
+00:00:05,500 --> 00:00:07,000
+Evolui de Voltorb.
+
+3
+00:00:07,500 --> 00:00:11,000
+Raio do trovão e explosão são perigosos.
+

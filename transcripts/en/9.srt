@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:06,000
+Blastoise is the final water-type evolution, equipped with powerful water cannons.
+
+2
+00:00:06,000 --> 00:00:10,480
+It fires devastating attacks like Hydro Pump and Skull Bash.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,520
+Dodrill é um Pokémon rápido dos tipos normal e voador com três cabeças.
+
+2
+00:00:05,520 --> 00:00:07,720
+Evolui de Doduo!
+
+3
+00:00:07,720 --> 00:00:11,160
+Bicada broca e triataque atacam com força.
+

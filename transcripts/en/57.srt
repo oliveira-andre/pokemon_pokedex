@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,000
+Primeape is a fighting-type Pokémon driven by pure rage.
+
+2
+00:00:04,000 --> 00:00:06,000
+It evolves from Mankey.
+
+3
+00:00:06,000 --> 00:00:10,000
+Cross Chop and Thrash deliver brutal damage.
+

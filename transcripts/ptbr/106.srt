@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,360
+Hitchmon Lee é um pokémon do tipo lutador com pernas extremamente flexíveis.
+
+2
+00:00:05,360 --> 00:00:07,440
+Não evolui.
+
+3
+00:00:07,440 --> 00:00:11,040
+Chute alto e chute duplo são icônicos.
+

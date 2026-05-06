@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,680
+Onix é um Pokémon dos tipos pedra e terra, com um corpo gigantesco de pedra.
+
+2
+00:00:05,680 --> 00:00:07,840
+Evolui para Stilex.
+
+3
+00:00:07,840 --> 00:00:11,600
+Lançamento de pedra e enrolar mostram sua força.
+

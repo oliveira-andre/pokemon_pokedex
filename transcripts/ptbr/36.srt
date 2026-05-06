@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:03,760
+Clefable é um pokémon tranquilo que vive em lugares silenciosos.
+
+2
+00:00:04,120 --> 00:00:05,520
+Evolui de Clefairy.
+
+3
+00:00:05,840 --> 00:00:08,840
+Luz Lunar e Duplo Tapa. Defina em seu estilo.
+

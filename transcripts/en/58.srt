@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Growlithe is a loyal fire-type Pokémon that protects its trainer fearlessly.
+
+2
+00:00:05,000 --> 00:00:08,000
+It evolves into new Arcanine.
+
+3
+00:00:08,000 --> 00:00:11,000
+Flamewheel and Bite are common.
+

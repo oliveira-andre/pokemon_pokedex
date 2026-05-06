@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,320
+Drowzee é um Pokémon do tipo psíquico que se alimenta de sonhos.
+
+2
+00:00:05,320 --> 00:00:07,520
+Evolui para Hypno.
+
+3
+00:00:07,520 --> 00:00:11,320
+Confusão e Hipnose são usadas com frequência.
+

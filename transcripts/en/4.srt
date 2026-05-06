@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,560
+Charmander is a fire-type Pokémon with a flame burning on its tail.
+
+2
+00:00:04,560 --> 00:00:08,240
+It evolves into Charmeleon and then Charizard.
+
+3
+00:00:08,240 --> 00:00:11,840
+Ember and Flamethrower show its fiery spirit.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,480
+Machop is a fighting type Pokemon that trains relentlessly.
+
+2
+00:00:04,480 --> 00:00:08,640
+It evolves into 2 Machoke and Machomp.
+
+3
+00:00:08,640 --> 00:00:11,680
+Low Kick and Karate Chop are common.
+

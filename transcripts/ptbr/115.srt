@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Kangaskhan é um pokémon do tipo normal, que protege ferozmente seu filhote.
+
+2
+00:00:05,000 --> 00:00:07,000
+Não evolui.
+
+3
+00:00:07,000 --> 00:00:11,000
+Soco confuso e Mega Soco atingem forte.
+

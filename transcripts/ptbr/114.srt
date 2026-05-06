@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:05,000
+Tângela é um Pokémon do tipo grama coberto por cipós-azuis.
+
+2
+00:00:05,500 --> 00:00:07,500
+Evolui para 10 Growth.
+
+3
+00:00:08,000 --> 00:00:11,500
+Chicote de vinha e enrolar são frequentes.
+

@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:05,120
+Fearow is a powerful, normal and flying type Pokemon with a long sharp beak.
+
+2
+00:00:05,120 --> 00:00:10,400
+It evolves from Spearow, Drill Peck and Mirror Move are signature techniques.
+

@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:06,000
+Jengar é um pokémon dos tipos fantasma e veneno que se esconde nas sombras.
+
+2
+00:00:06,000 --> 00:00:08,000
+Evolui de Hunter.
+
+3
+00:00:08,000 --> 00:00:13,000
+Bola sombria e devorador de sonhos são devastadores.
+

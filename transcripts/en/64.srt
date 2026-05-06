@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,560
+Kadabra is a psychic-type Pokémon with incredible mental power.
+
+2
+00:00:04,560 --> 00:00:06,000
+It evolves from Abra.
+
+3
+00:00:06,800 --> 00:00:10,000
+Psychic and Psybeam overwhelm opponents.
+

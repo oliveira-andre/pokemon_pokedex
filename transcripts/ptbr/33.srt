@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,720
+Nidorino é um Pokémon do tipo veneno que se torna agressivo quando ameaçado.
+
+2
+00:00:04,720 --> 00:00:08,000
+Evolui de Nidoran Macho e depois Nidoking.
+
+3
+00:00:08,000 --> 00:00:10,800
+Ataque de chifre e chute duplo são frequentes.
+
