@@ -52,6 +52,26 @@
         <span class="pokedex-toggle-flag" aria-hidden="true">🇺🇸</span>
         <span class="pokedex-toggle-text">English</span>
       </button>
+      <button class="pokedex-toggle pokedex-mode-toggle" type="button" id="pokedex-mode-toggle">
+        <span class="pokedex-toggle-flag" aria-hidden="true">🎮</span>
+        <span class="pokedex-toggle-text mode-text-quiz">Quiz Mode</span>
+        <span class="pokedex-toggle-text mode-text-normal" style="display:none;">Normal Mode</span>
+      </button>
+    </section>
+
+    <section class="pokedex-score-bar" aria-label="Score" style="display: none;">
+      <div class="pokedex-score-success" aria-label="Correct answers">
+        <span class="pokedex-score-icon">✔</span>
+        <span class="pokedex-score-count" id="score-success">0</span>
+      </div>
+      <div class="pokedex-score-progress" aria-label="Progress">
+        <span id="score-current">0</span> / <span id="score-total">151</span>
+      </div>
+      <div class="pokedex-score-failure" aria-label="Wrong answers">
+        <span class="pokedex-score-icon">✖</span>
+        <span class="pokedex-score-count" id="score-failure">0</span>
+      </div>
+      <button class="pokedex-button-reset" type="button" id="pokedex-reset" title="Reset progress">Reset ↺</button>
     </section>
 
     <section class="pokedex-book">
@@ -65,6 +85,8 @@
           <span class="pokedex-name"></span>
         </h1>
 
+        <div class="pokedex-feedback" id="pokedex-feedback" aria-live="polite" style="display: none;"></div>
+
         <form class="pokedex-form">
           <input
             type="search"
@@ -77,6 +99,7 @@
         <div class="pokedex-buttons">
           <button class="pokedex-button pokedex-button-prev" type="button">Prev &lt;</button>
           <button class="pokedex-button pokedex-button-next" type="button">Next &gt;</button>
+          <button class="pokedex-button pokedex-button-submit" type="button" style="display: none;">Submit</button>
         </div>
 
         <img src="./images/left-pokedex.png" alt="left pokedex" class="pokedex-device pokedex-device-left">
@@ -88,5 +111,19 @@
       </section>
     </section>
   </main>
+
+  <div class="pokedex-summary-overlay" id="pokedex-summary" aria-hidden="true">
+    <div class="pokedex-summary-panel">
+      <h2 class="pokedex-summary-title">Quiz Complete!</h2>
+      <div class="pokedex-summary-score">
+        <span class="pokedex-summary-success">✔ <span id="summary-success">0</span></span>
+        <span class="pokedex-summary-failure">✖ <span id="summary-failure">0</span></span>
+      </div>
+      <div class="pokedex-summary-list" id="summary-list"></div>
+      <button class="pokedex-button pokedex-button-close-summary" type="button" id="summary-close">
+        ✕ Close
+      </button>
+    </div>
+  </div>
 </body>
 </html>

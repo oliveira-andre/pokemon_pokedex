@@ -1,16 +1,35 @@
 // DOM references used across rendering, controls, and PWA splash behavior.
 const pokedexName = document.querySelector('.pokedex-name');
 const pokedexNumber = document.querySelector('.pokedex-number');
+const pokedexSeparator = document.querySelector('.pokedex-separator');
 const pokedexImage = document.querySelector('.pokedex-image');
 const pokedexForm = document.querySelector('.pokedex-form');
 const pokedexInput = document.querySelector('.pokedex-search-input');
 const pokedexLeftPanel = document.querySelector('.pokedex-left-panel');
 const pokedexPrevButton = document.querySelector('.pokedex-button-prev');
 const pokedexNextButton = document.querySelector('.pokedex-button-next');
-const pokedexLanguageButtons = document.querySelectorAll('.pokedex-toggle');
+const pokedexLanguageButtons = document.querySelectorAll('.pokedex-toggle[data-language]');
 const pokedexRightSubtitle = document.querySelector('.pokedex-right-subtitle');
 const pokedexTranscriptDisplay = document.querySelector('.pokedex-transcript-display');
 const pokedexSplash = document.querySelector('#pokedex-pwa-splash');
+
+// Quiz Mode DOM references.
+const pokedexModeToggle = document.querySelector('#pokedex-mode-toggle');
+const modeTextQuiz = document.querySelector('.mode-text-quiz');
+const modeTextNormal = document.querySelector('.mode-text-normal');
+const pokedexScoreBar = document.querySelector('.pokedex-score-bar');
+const scoreSuccessEl = document.querySelector('#score-success');
+const scoreFailureEl = document.querySelector('#score-failure');
+const scoreCurrentEl = document.querySelector('#score-current');
+const pokedexFeedback = document.querySelector('#pokedex-feedback');
+const pokedexSubmitButton = document.querySelector('.pokedex-button-submit');
+const pokedexResetButton = document.querySelector('#pokedex-reset');
+const summaryOverlay = document.querySelector('#pokedex-summary');
+const summarySuccessEl = document.querySelector('#summary-success');
+const summaryFailureEl = document.querySelector('#summary-failure');
+const summaryListEl = document.querySelector('#summary-list');
+const summaryCloseButton = document.querySelector('#summary-close');
+const pokedexSummaryTitle = document.querySelector('.pokedex-summary-title');
 
 // Core data sources.
 // `LOCAL_KANTO_DATA_URL` is an optional local mirror for the first generation.
@@ -28,7 +47,18 @@ const translations = {
     loading: 'Loading...',
     notFound: 'Not found :c',
     rightSubtitle: 'Navigate with buttons or keyboard arrows.',
-    documentLanguage: 'en'
+    documentLanguage: 'en',
+    quizPlaceholder: "Who's that Pokémon?",
+    quizComplete: 'Quiz Complete!',
+    viewResults: 'View Results',
+    close: '✕ Close',
+    resetConfirm: 'Reset all progress? This will clear all your answers.',
+    correct: 'Correct!',
+    submit: 'Submit',
+    quizMode: 'Quiz Mode',
+    normalMode: 'Normal Mode',
+    perfectRun: 'Perfect run! No wrong answers.',
+    emptyGuess: '(no answer)'
   },
   pt: {
     prev: 'Anterior <',
@@ -37,7 +67,18 @@ const translations = {
     loading: 'Carregando...',
     notFound: 'Não encontrado :c',
     rightSubtitle: 'Navegue pelos botões ou setas do teclado.',
-    documentLanguage: 'pt-BR'
+    documentLanguage: 'pt-BR',
+    quizPlaceholder: 'Quem é esse Pokémon?',
+    quizComplete: 'Quiz Completo!',
+    viewResults: 'Ver Resultados',
+    close: '✕ Fechar',
+    resetConfirm: 'Zerar progresso? Isso vai apagar todas as respostas.',
+    correct: 'Correto!',
+    submit: 'Enviar',
+    quizMode: 'Modo Quiz',
+    normalMode: 'Modo Normal',
+    perfectRun: 'Perfeito! Nenhuma resposta errada.',
+    emptyGuess: '(sem resposta)'
   }
 };
 
@@ -56,6 +97,19 @@ let hasTriedLoadingLocalKantoData = false;
 let captionAnimationFrame = null;
 let currentCaptionIndex = -1;
 let latestAudioRequest = 0;
+
+// Quiz Mode state.
+const TOTAL_POKEMON = 151;
+const QUIZ_STORAGE_KEY = 'pokemon-score-state';
+const QUIZ_FEEDBACK_DURATION_MS = 1400;
+
+let isQuizMode = false;
+let kantoList = [];
+let quizIndex = 0;
+let successCount = 0;
+let failureCount = 0;
+let answers = {};
+let isQuizProcessing = false;
 
 // Reuse one audio element to avoid creating multiple players.
 pokedexAudio.preload = 'none';
@@ -410,7 +464,7 @@ const applyLanguage = (language) => {
 
   pokedexPrevButton.textContent = getTranslation('prev');
   pokedexNextButton.textContent = getTranslation('next');
-  pokedexInput.placeholder = getTranslation('placeholder');
+  pokedexInput.placeholder = getTranslation(isQuizMode ? 'quizPlaceholder' : 'placeholder');
 
   if (pokedexRightSubtitle) {
     pokedexRightSubtitle.textContent = getTranslation('rightSubtitle');
@@ -423,8 +477,10 @@ const applyLanguage = (language) => {
     button.setAttribute('aria-pressed', String(button.dataset.language === currentLanguage));
   }
 
+  applyQuizLanguage();
+
   // Reapply audio language immediately for the currently visible Pokemon.
-  if (!isRendering && pokedexNumber.textContent) {
+  if (!isQuizMode && !isRendering && pokedexNumber.textContent) {
     playPokemonAudio(currentPokemonId);
   }
 };
@@ -491,6 +547,11 @@ const navigateToAdjacentPokemon = (direction, triggerButton) => {
 pokedexForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
+  if (isQuizMode) {
+    handleQuizSubmit();
+    return;
+  }
+
   const query = normalizePokemonQuery(pokedexInput.value);
   if (!query) {
     return;
@@ -550,8 +611,11 @@ const initializeApp = async () => {
 
   // Load local 1..151 dataset first (optional), then API max count.
   await loadLocalKantoData();
+  await loadKantoQuizList();
   await initializePokemonLimit();
   updateNavigationState();
+
+  loadQuizState();
 
   await renderPokemon(currentPokemonId);
 
@@ -561,6 +625,324 @@ const initializeApp = async () => {
     }, 180);
   }
 };
+
+// ──────────────────────────────────────────────
+// QUIZ MODE LOGIC
+// ──────────────────────────────────────────────
+
+const QUIZ_LIGHT_CLASSES = ['pokedex-quiz-light-success', 'pokedex-quiz-light-failure'];
+const QUIZ_PANEL_CLASSES = ['pokedex-panel-success', 'pokedex-panel-failure'];
+
+const levenshteinDistance = (a, b) => {
+  const m = a.length;
+  const n = b.length;
+  if (m === 0) return n;
+  if (n === 0) return m;
+  let prevRow = Array.from({ length: n + 1 }, (_, i) => i);
+  let currRow = new Array(n + 1);
+  for (let i = 1; i <= m; i++) {
+    currRow[0] = i;
+    for (let j = 1; j <= n; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      currRow[j] = Math.min(
+        prevRow[j] + 1,
+        currRow[j - 1] + 1,
+        prevRow[j - 1] + cost
+      );
+    }
+    [prevRow, currRow] = [currRow, prevRow];
+  }
+  return prevRow[n];
+};
+
+// One-character typo tolerance keeps fast typing usable without giving away the answer.
+const isCloseEnough = (guess, actual) => {
+  const normalizedGuess = guess.trim().toLowerCase();
+  const normalizedActual = actual.trim().toLowerCase();
+  if (normalizedGuess === '') return false;
+  if (normalizedGuess === normalizedActual) return true;
+  return levenshteinDistance(normalizedGuess, normalizedActual) <= 1;
+};
+
+const loadKantoQuizList = async () => {
+  // Reuse local Kanto data already loaded by loadLocalKantoData().
+  kantoList = Array.from(localKantoById.values())
+    .filter((entry) => entry.id >= 1 && entry.id <= TOTAL_POKEMON && entry.name && entry.sprite)
+    .sort((a, b) => a.id - b.id);
+};
+
+const saveQuizState = () => {
+  try {
+    const state = { quizIndex, successCount, failureCount, answers };
+    localStorage.setItem(QUIZ_STORAGE_KEY, JSON.stringify(state));
+  } catch {
+    // Storage may be disabled; quiz still works in-memory.
+  }
+};
+
+const loadQuizState = () => {
+  try {
+    const raw = localStorage.getItem(QUIZ_STORAGE_KEY);
+    if (!raw) return false;
+    const state = JSON.parse(raw);
+    if (typeof state.quizIndex === 'number' && typeof state.successCount === 'number') {
+      quizIndex = state.quizIndex;
+      successCount = state.successCount;
+      failureCount = state.failureCount;
+      answers = state.answers || {};
+      return true;
+    }
+  } catch {
+    // Ignore malformed state.
+  }
+  return false;
+};
+
+const updateScoreDisplay = ({ bumpSuccess = false, bumpFailure = false } = {}) => {
+  if (scoreSuccessEl) scoreSuccessEl.textContent = successCount;
+  if (scoreFailureEl) scoreFailureEl.textContent = failureCount;
+  if (scoreCurrentEl) scoreCurrentEl.textContent = successCount + failureCount;
+
+  // Score-pop animation runs by toggling a class on the relevant counter.
+  const bump = (element) => {
+    if (!element) return;
+    element.classList.remove('pokedex-score-bump');
+    void element.offsetWidth;
+    element.classList.add('pokedex-score-bump');
+  };
+  if (bumpSuccess) bump(scoreSuccessEl);
+  if (bumpFailure) bump(scoreFailureEl);
+};
+
+const applyQuizLanguage = () => {
+  if (modeTextQuiz) modeTextQuiz.textContent = getTranslation('quizMode');
+  if (modeTextNormal) modeTextNormal.textContent = getTranslation('normalMode');
+  if (pokedexSummaryTitle) pokedexSummaryTitle.textContent = getTranslation('quizComplete');
+  if (summaryCloseButton) summaryCloseButton.textContent = getTranslation('close');
+  if (pokedexSubmitButton) {
+    const showResults = isQuizMode && quizIndex >= kantoList.length && kantoList.length > 0;
+    pokedexSubmitButton.textContent = getTranslation(showResults ? 'viewResults' : 'submit');
+  }
+};
+
+const clearQuizFeedbackEffects = () => {
+  pokedexLeftPanel.classList.remove(...QUIZ_PANEL_CLASSES, ...QUIZ_LIGHT_CLASSES);
+};
+
+const renderQuizPokemon = () => {
+  if (quizIndex >= kantoList.length) {
+    showSummary();
+    return;
+  }
+  const pokemon = kantoList[quizIndex];
+  pokedexImage.style.display = 'block';
+  pokedexImage.src = pokemon.sprite;
+  pokedexNumber.textContent = `#${String(pokemon.id).padStart(3, '0')}`;
+  if (pokedexSeparator) pokedexSeparator.textContent = '';
+  pokedexName.textContent = '';
+  pokedexInput.value = '';
+  pokedexInput.disabled = false;
+  pokedexSubmitButton.disabled = false;
+  pokedexFeedback.textContent = '';
+  pokedexFeedback.style.display = 'none';
+  pokedexFeedback.className = 'pokedex-feedback';
+  pokedexInput.focus();
+  updateScoreDisplay();
+  applyQuizLanguage();
+};
+
+const showFeedback = (isCorrect, correctName) => {
+  pokedexFeedback.style.display = 'block';
+  pokedexFeedback.textContent = isCorrect
+    ? `✔ ${getTranslation('correct')}`
+    : `✖ ${correctName}`;
+  pokedexFeedback.className = `pokedex-feedback ${isCorrect ? 'pokedex-feedback-success' : 'pokedex-feedback-failure'} pokedex-feedback-animate`;
+
+  pokedexName.textContent = correctName;
+  if (pokedexSeparator) pokedexSeparator.textContent = '-';
+
+  // Restart panel + audio-light animations cleanly between successive answers.
+  pokedexLeftPanel.classList.remove(...QUIZ_PANEL_CLASSES, ...QUIZ_LIGHT_CLASSES);
+  void pokedexLeftPanel.offsetWidth;
+  pokedexLeftPanel.classList.add(
+    isCorrect ? 'pokedex-panel-success' : 'pokedex-panel-failure',
+    isCorrect ? 'pokedex-quiz-light-success' : 'pokedex-quiz-light-failure'
+  );
+};
+
+const showSummary = () => {
+  if (summarySuccessEl) summarySuccessEl.textContent = successCount;
+  if (summaryFailureEl) summaryFailureEl.textContent = failureCount;
+  if (summaryListEl) {
+    summaryListEl.innerHTML = '';
+    const wrongEntries = kantoList.filter((pokemon) => !answers[pokemon.id]?.correct);
+    if (wrongEntries.length === 0) {
+      const empty = document.createElement('div');
+      empty.className = 'pokedex-summary-empty';
+      empty.textContent = getTranslation('perfectRun');
+      summaryListEl.appendChild(empty);
+    } else {
+      for (const pokemon of wrongEntries) {
+        const answer = answers[pokemon.id];
+        const item = document.createElement('div');
+        item.className = 'pokedex-summary-item pokedex-summary-wrong';
+        const sprite = document.createElement('img');
+        sprite.src = pokemon.sprite;
+        sprite.alt = pokemon.name;
+        sprite.className = 'pokedex-summary-sprite';
+        const info = document.createElement('div');
+        info.className = 'pokedex-summary-info';
+        const nameSpan = document.createElement('span');
+        nameSpan.className = 'pokedex-summary-name';
+        nameSpan.textContent = `#${String(pokemon.id).padStart(3, '0')} ${pokemon.name}`;
+        const guessSpan = document.createElement('span');
+        guessSpan.className = 'pokedex-summary-guess';
+        const userGuess = answer?.guess?.trim() ? answer.guess : getTranslation('emptyGuess');
+        guessSpan.textContent = `✖ "${userGuess}"`;
+        info.appendChild(nameSpan);
+        info.appendChild(guessSpan);
+        item.appendChild(sprite);
+        item.appendChild(info);
+        summaryListEl.appendChild(item);
+      }
+    }
+  }
+  pokedexInput.disabled = true;
+  pokedexSubmitButton.disabled = true;
+  summaryOverlay.classList.add('pokedex-summary-visible');
+  summaryOverlay.setAttribute('aria-hidden', 'false');
+};
+
+const showViewResultsButton = () => {
+  pokedexSubmitButton.textContent = getTranslation('viewResults');
+  pokedexSubmitButton.disabled = false;
+  pokedexInput.style.display = 'none';
+};
+
+const hideSummary = () => {
+  summaryOverlay.classList.remove('pokedex-summary-visible');
+  summaryOverlay.setAttribute('aria-hidden', 'true');
+};
+
+const handleQuizSubmit = () => {
+  if (isQuizProcessing) return;
+  if (quizIndex >= kantoList.length) {
+    showSummary();
+    return;
+  }
+  isQuizProcessing = true;
+  const pokemon = kantoList[quizIndex];
+  const userGuess = pokedexInput.value.trim();
+  const correct = isCloseEnough(userGuess, pokemon.name);
+  answers[pokemon.id] = { guess: userGuess, correct };
+  if (correct) successCount++; else failureCount++;
+  updateScoreDisplay({ bumpSuccess: correct, bumpFailure: !correct });
+  showFeedback(correct, pokemon.name);
+  pokedexInput.disabled = true;
+  pokedexSubmitButton.disabled = true;
+  saveQuizState();
+  window.setTimeout(() => {
+    quizIndex++;
+    saveQuizState();
+    isQuizProcessing = false;
+    clearQuizFeedbackEffects();
+    renderQuizPokemon();
+  }, QUIZ_FEEDBACK_DURATION_MS);
+};
+
+const enterQuizMode = () => {
+  // Stop any audio that might leak the answer before we hide the name.
+  stopPokemonAudio();
+  modeTextQuiz.style.display = 'none';
+  modeTextNormal.style.display = 'inline';
+  pokedexScoreBar.style.display = 'flex';
+  pokedexPrevButton.style.display = 'none';
+  pokedexNextButton.style.display = 'none';
+  pokedexSubmitButton.style.display = 'inline-flex';
+  pokedexInput.placeholder = getTranslation('quizPlaceholder');
+
+  if (quizIndex >= kantoList.length && kantoList.length > 0) {
+    updateScoreDisplay();
+    pokedexImage.style.display = 'none';
+    pokedexNumber.textContent = '';
+    pokedexName.textContent = '';
+    if (pokedexSeparator) pokedexSeparator.textContent = '';
+    showViewResultsButton();
+  } else {
+    renderQuizPokemon();
+  }
+};
+
+const exitQuizMode = () => {
+  modeTextQuiz.style.display = 'inline';
+  modeTextNormal.style.display = 'none';
+  pokedexScoreBar.style.display = 'none';
+  pokedexPrevButton.style.display = 'inline-flex';
+  pokedexNextButton.style.display = 'inline-flex';
+  pokedexSubmitButton.style.display = 'none';
+  pokedexInput.style.display = '';
+  pokedexFeedback.style.display = 'none';
+  clearQuizFeedbackEffects();
+  pokedexInput.placeholder = getTranslation('placeholder');
+  renderPokemon(currentPokemonId);
+};
+
+if (pokedexModeToggle) {
+  pokedexModeToggle.addEventListener('click', () => {
+    isQuizMode = !isQuizMode;
+    pokedexModeToggle.setAttribute('aria-pressed', String(isQuizMode));
+    if (isQuizMode) {
+      enterQuizMode();
+    } else {
+      exitQuizMode();
+    }
+  });
+}
+
+if (pokedexResetButton) {
+  pokedexResetButton.addEventListener('click', () => {
+    if (!confirm(getTranslation('resetConfirm'))) return;
+    hideSummary();
+    quizIndex = 0;
+    successCount = 0;
+    failureCount = 0;
+    answers = {};
+    try { localStorage.removeItem(QUIZ_STORAGE_KEY); } catch { /* ignore */ }
+    isQuizProcessing = false;
+    pokedexSubmitButton.textContent = getTranslation('submit');
+    pokedexInput.style.display = '';
+    clearQuizFeedbackEffects();
+    pokedexFeedback.style.display = 'none';
+    renderQuizPokemon();
+  });
+}
+
+if (summaryCloseButton) {
+  summaryCloseButton.addEventListener('click', () => {
+    hideSummary();
+    showViewResultsButton();
+  });
+}
+
+if (summaryOverlay) {
+  summaryOverlay.addEventListener('click', (event) => {
+    if (event.target === summaryOverlay) {
+      hideSummary();
+      showViewResultsButton();
+    }
+  });
+}
+
+if (pokedexSubmitButton) {
+  pokedexSubmitButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (quizIndex >= kantoList.length) {
+      showSummary();
+      return;
+    }
+    pokedexForm.requestSubmit();
+  });
+}
 
 initializeApp();
 
